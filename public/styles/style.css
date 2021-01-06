@@ -1,19 +1,5 @@
-@font-face {
-  font-family: "steelfish";
-  src: url(./steelfish.ttf);
-}
-@font-face {
-  font-family: "steelfishBold";
-  src: url(./steelfishbold.ttf);
-}
-@font-face {
-  font-family: "collegiate";
-  src: url(./COLLEGIA.ttf);
-}
 html, body {
-  font-family: "collegiate";
-  font-size: 36px;
-  letter-spacing: 0.075rem;
+  
   height: 100%;
   background: linear-gradient(#e1f7ff, #add8e6);
   padding: 25px;
@@ -31,19 +17,8 @@ main {
 }
 
 img {
-  width: 200px;
-  height: 200px;
-}
-
-@media only screen and (max-width: 650px) {
-  body {
-    font-size: 28px;
-  }
-
-  main {
-    margin: auto;
-    width: auto;
-  }
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
