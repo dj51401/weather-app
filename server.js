@@ -11,19 +11,20 @@ app.use(express.json());
 app.use(express.static( __dirname + '/public'));
 
 app.post('/weather', (req, res) => {
-    console.log(req.body.q);
     var url = `http://api.weatherapi.com/v1/current.json`;
+    if(req.body === undefined) return
     axios({
         url: url,
         responseType: 'json',
         params: {
             key: `${WEATHER_API_KEY}`,
-            q: `${req.body.q}`
+            q: `${req.body.lat},${req.body.lon}`
         }
     }).then(data => res.json(data.data)).catch(err => {
         console.error(err);
     })
 })
+
 
 app.listen(3000,() => {
     console.log('Opened');

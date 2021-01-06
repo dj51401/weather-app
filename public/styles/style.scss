@@ -1,2 +1,39 @@
-body{
-    background-color: lightskyblue;
+@font-face{font-family: "steelfish"; src: url(./steelfish.ttf);}
+@font-face{font-family: "steelfishBold"; src: url(./steelfishbold.ttf);}
+@font-face{font-family: "collegiate"; src: url(./COLLEGIA.ttf);}
+
+html, body{
+    font-family: "collegiate";
+    font-size: 36px;
+    letter-spacing: .075rem;
+    height: 100%;
+    background: linear-gradient(#e1f7ff, #add8e6);
+    padding: 25px;
+    margin: 0px;
+}
+
+main{
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px #0000005d;
+    margin: auto;
+    width: 50%;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 650px){
+    body{
+        font-size: 28px;
+    }
+
+    main{
+        margin: auto;
+        width: auto;
+    }
+}
