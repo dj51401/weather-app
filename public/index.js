@@ -17,7 +17,6 @@ searchBox.addListener('places_changed', () => {
             'Accept': 'application/json',
         },
         body: JSON.stringify({
-            key: '',
             lat: `${lat}`,
             lon: `${lon}`,
             days: 3,
